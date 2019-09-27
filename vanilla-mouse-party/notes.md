@@ -1,0 +1,9 @@
+- Beneath our `draw` function:
+  - Create a new event listener on the window that will listen for a `mouseover` event.
+  - The callback should invoke our `draw` function and store the resulting id to our `drawId` variable.
+  - We'll use the `drawId` to cancel the interval anytime our mouse moves out of the window.
+  - Add a final event listener on the window that will listen for a `mouseout` event.
+  - The callback should call the built in `clearInterval` method.
+    - `clearInterval` accepts a single argument, the ID of the interval we wish to stop.
+    - Pass our `drawId` into the `clearInterval` invocation.
+- When this is done, you should see a group of randomly colored dots following your mouse as it moves across the browser window! Feel free to play around with the random number and function and setInterval timer to see what changes you can make happen.
